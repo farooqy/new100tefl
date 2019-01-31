@@ -1,0 +1,16 @@
+.navbar-nav .active {
+    background-color:orange;
+}
+.header_nav_1.dark .nav .active a, .dark .header_nav_1 .nav .active a {
+    color:black;
+}  
+.companyvideoDiv video{
+    border:thin solid white;
+}  
+.margin-top-10 {
+    margin-top:40px;
+}   
+.header_nav_1.dark .nav li a:hover, .dark .header_nav_1 .nav li a:hover {
+    background-color:orange;
+    color:black;
+}
