@@ -9,7 +9,7 @@
 						<div class="left_zone companyvideoDiv">
 							<!--<div class="video_style">-->
 								<!--<iframe src="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque" allowfullscreen="">-->
-								<video src="images/uploads/1548220262_addFile_.mp4" class="animate-in slow-mo" controls="" data-anim-type="zoom-in-up-big" data-anim-delay="2000" width="100%" height="100%"></video>
+								<video src="images/uploads/100tefl_20190131_wechat.mp4" class="animate-in slow-mo" controls="" data-anim-type="zoom-in-up-big" data-anim-delay="2000" width="100%" height="100%" poster="images/uploads/100tefl_20190131_wechat_poster.jpg"></video>
 							<!--</iframe>-->
 						<!--</div>-->
 						
@@ -20,8 +20,8 @@
 				</div>
 				<div lass="row columns" class="row text-center animate-in slow-mo" data-anim-type="zoom-in-up-big" data-anim-delay="">
 					<h3 style="color: white; padding-bottom: 20px; text-align: center; font-size: 20px;">
-						你可以信赖的招聘管家<br>
-						Your Dependable Foreign Talent Recruit Solution Providers
+						你可以信赖的外教招聘管家<br>
+						Your Dependable Career Partner
 					</h3>
 				</div>
 			</div>

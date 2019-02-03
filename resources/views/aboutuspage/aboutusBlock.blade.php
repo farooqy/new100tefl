@@ -23,9 +23,9 @@ About us | 100TEFL
         </div>
     </div>
 
-<section class="container-fluid animate-in slow-mo" id="aboutBlock" data-anim-type="zoom-in-up-large" data-anim-delay="" style="background-color:rgba(0,0,0,0.5); padding:20px; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('images/uploads/st001.jpg - Copy.jpg')">
+<section class="container-fluid animate-in slow-mo" id="aboutBlock" data-anim-type="zoom-in-up-large" data-anim-delay="" style="background-color:rgba(0,0,0,0.5); padding:20px; background:linear-gradient(rgba(245, 175, 84, 0.28), rgba(245, 175, 84, 0.28)), url('images/uploads/st001.jpg - Copy.jpg')">
 
-        <div class="container" style="padding:0px; border:thin solid gray; padding:10px; background-color:rgba(0,0,0,0.9); color:white; font-size:15px; margin-bottom:20px">
+        <div class="container" style="padding:0px; border:thin solid gray; padding:10px; background-color:rgba(190, 231, 242, 0.4); color:white; font-size:15px; margin-bottom:20px">
 
             <div class="sixteen columns animate-in slow-mo" data-anim-type="zoom-in-up-large" data-anim-delay="" style="margin:0px;">
                 <div style="margin:0px;" class="four columns">
@@ -37,32 +37,42 @@ About us | 100TEFL
                     </div>
                 </div>
                 <div class="twelve columns">
-                    100tefl specialises in matching foreign talents to 
-                    clients. We do not merely send resumes to prospective 
-                    employers but assess the needs of our clients first to 
-                    ensure only the best fit makes it through the selection
-                    process. By offering tiered services, we allow our 
-                    clients to select the right kind of recruitment and 
-                    support services they need to fulfil their staffing 
-                    needs. As a full-recruitment service provider for the 
-                    education market, we offer staff management support, 
-                    settling-in services, teaching certificate support,
-                    visa consultancy and free Mandarin training so as to 
-                    help candidates transition seamlessly into their new 
-                    lives in China. In addition, 100tefl also serves as an
-                    information hub for both our K12 clientele and 
-                    job-seekers. On our platform, you’ll find the latest 
-                    information about living and working in China as well
-                    as advice on how to make people from diverse 
-                    backgrounds feel at home at your organisation. 
-                    We also host a number of events to help enrich the 
-                    working abroad experience and foster 
-                    cross-cultural communication.
+                    <p>
+                        100tefl specialises in matching foreign talents to 
+                        clients. We do not merely send resumes to prospective 
+                        employers but assess the needs of our clients first to 
+                        ensure only the best fit makes it through the selection
+                        process. By offering tiered services, we allow our 
+                        clients to select the right kind of recruitment and 
+                        support services they need to fulfil their staffing 
+                        needs.
+                    </p>
+                    <p>
+                         As a full-recruitment service provider for the 
+                        education market, we offer staff management support, 
+                        settling-in services, teaching certificate support,
+                        visa consultancy and free Mandarin training so as to 
+                        help candidates transition seamlessly into their new 
+                        lives in China. In addition, 100tefl also serves as an
+                        information hub for both our K12 clientele and 
+                        job-seekers. 
+                    </p>
+                    <p>
+                        On our platform, you’ll find the latest 
+                        information about living and working in China as well
+                        as advice on how to make people from diverse 
+                        backgrounds feel at home at your organisation. 
+                        We also host a number of events to help enrich the 
+                        working abroad experience and foster 
+                        cross-cultural communication.
+                    </p>
+                        
+                        
                 </div>
             </div>
         </div>
 
-        <div class="container animate-in slow-mo" data-anim-type="zoom-in-up-large" data-anim-delay="" style="padding:0px; border:thin solid gray; padding:10px; background-color:rgba(0,0,0,0.9); color:white; font-size:15px; margin-bottom:20px">
+        <div class="container animate-in slow-mo" data-anim-type="zoom-in-up-large" data-anim-delay="" style="padding:0px; border:thin solid gray; padding:10px; background-color:rgba(190, 231, 242, 0.4); color:white; font-size:15px; margin-bottom:20px">
 
             <div class="sixteen columns" style="margin:0px;">
                 <div class="twelve columns">
@@ -90,7 +100,7 @@ About us | 100TEFL
 
             <div class="sixteen columns animate-in slow-mo" data-anim-type="zoom-in-up-large" data-anim-delay="" style="margin:0px;">
 
-                <div class="eight columns" style="background-color:rgba(0,0,0,0.9);border:thin solid white; margin:2px">
+                <div class="eight columns" style="background-color:rgba(190, 231, 242, 0.4);border:thin solid white; margin:2px">
                     <div class="" style="; padding:0%; text-align:center ">
                         <!--<img src="images/uploads/service1.jpg" class="" width="100%" height="100%">-->
                         <span class="pi creative_c_icon pixicon-phone2" style="height: 100%; width: 100%; color: rgb(241, 194, 50); font-size: 50px; background-color: rgba(0, 0, 0, 0);">
@@ -109,7 +119,7 @@ About us | 100TEFL
                         </div>
                     </div>
                 </div>
-                <div style="margin:0px;background-color:rgba(0,0,0,0.9);border:thin solid white;margin:2px" class="eight columns animate-in slow-mo" data-anim-type="zoom-in-up-large" data-anim-delay="">
+                <div style="margin:0px;background-color:rgba(190, 231, 242, 0.4);border:thin solid white;margin:2px" class="eight columns animate-in slow-mo" data-anim-type="zoom-in-up-large" data-anim-delay="">
                     <div class="" style=" padding:0%; text-align:center">
                         <!--<img src="images/uploads/service1.jpg" class="" width="100%" height="100%">-->
                         <span class="pi creative_c_icon pixicon-grid" style="height: 100%; width: 100%; color: rgb(241, 194, 50); font-size: 50px; background-color: rgba(0, 0, 0, 0);">
@@ -120,7 +130,7 @@ About us | 100TEFL
                         Scan Our Wechat QR Code
                     </div>
                     <div class="text-center" style="text-align:center; margin-top:10px">
-                        <img src="images/uploads/mmexport1548729591072.jpg" style="border-radius: 0px; border-style: none; border-width: 1px; text-align: center;" width="150px" height="100px">
+                        <img src="images/uploads/mmexport1549187445036.jpg" style="border-radius: 0px; border-style: none; border-width: 1px; text-align: center;" width="150px" height="100px">
                     </div>
                 </div>
             </div>

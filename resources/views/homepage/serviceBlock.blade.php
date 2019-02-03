@@ -16,7 +16,7 @@
                     </div>
                     <div class="text_homes_style">
                       <p class="calc_homes_st editContent">
-                        Recrutiment
+                        Recruitment
                       </p>
                       <p class="calc_homes_text editContent"> </p>
                     </div>
@@ -30,7 +30,7 @@
                     <div class="img_homes_st"><img src="images/uploads/internet-training.png" class="animate-in slow-mo" alt="" style="border-radius: 0px; border-color: rgb(255, 255, 0); border-style: solid; border-width: 1px; width: 220px; height: 200px;" data-anim-type="fade-in-up-left-large" data-anim-delay="">
                     </div>
                     <div class="text_homes_style">
-                      <p class="calc_homes_st editContent">Training</p>
+                      <p class="calc_homes_st editContent">Trainings</p>
                       <p class="calc_text editContent"> </p>
                     </div>
                     <span class="perday_btn editContent" style="">  

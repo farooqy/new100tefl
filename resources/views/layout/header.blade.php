@@ -16,12 +16,16 @@
                             
                             <div id="navbar-collapse-02" class="collapse navbar-collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="active propClone"><a href="{{env('APP_URL')}}">Home</a></li>
-                                    <li class="propClone"><a href="{{env('APP_URL')}}#servicesBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;" src="images/uploads/jobvacancy.jpg">Services</a></li>
-                                    <li class="propClone"><a href="{{env('APP_URL')}}#careersBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">Careers Partner</a></li>
-                                    <li class="propClone"><a href="{{env('APP_URL')}}#newsBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">News</a></li>
+                                    <li class="active propClone"><a href="{{env('APP_URL')}}">
+                                        {{-- <span class="fa fa-home" aria-hidden="true"></span> --}}Home</a></li>
+                                    <li class="propClone"><a href="{{env('APP_URL')}}#servicesBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;" src="images/uploads/jobvacancy.jpg">
+                                        {{-- <span class="fa fa-server" aria-hidden="true"></span> --}}Services</a></li>
+                                    <li class="propClone"><a href="{{env('APP_URL')}}#careersBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">Career Partner</a></li>
+                                    <li class="propClone"><a href="{{env('APP_URL')}}#newsBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">
+                                        {{-- <span class="fa fa-newspaper-o" aria-hidden="true"></span> --}}News</a></li>
                                     <li class="propClone"><a href="{{env('APP_URL')}}aboutus" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">About</a></li>
-                                    <li class="propClone"><a href="{{env('APP_URL')}}#contactBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">Contact</a></li>
+                                    <li class="propClone"><a href="{{env('APP_URL')}}#contactBlock" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: none; font-size: 15px;">
+                                        {{-- <span class="fa fa-address-book" aria-hidden="true"></span> --}}Contact</a></li>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
                             

@@ -39,9 +39,9 @@
 						</div>
 					</div>
 					<div class="eleven columns  omega">
-					    <div class="column text-center"><h2 style="font-size: 28px; text-decoration: underline;">Our new year party</h2></div>
-						<div class="video_style">
-							<video src="images/uploads/1548220262_addFile_.mp4" controls="" type="video/mp4" width="100%" height="100%"></video>
+					    <div class="column text-center"><h2 style="font-size: 28px; text-decoration: underline;">Views of foreigners in Nanjing China</h2></div>
+						<div class="video_style" style="border:thin solid gray">
+							<video src="images/uploads/foreigners_20190131_small.mp4" controls="" type="video/mp4" width="100%" height="100%" poster="images/uploads/foreigners_20190131_poster.jpg" ></video>
  					    </div>
 					</div>
 				</div>

@@ -10,7 +10,7 @@
 		<div class="container ">    
 			<div class="sixteen columns">
 				<div class="intro_div">
-					<h2 class="editContent"> Career Partner - 歪果仁</h2>
+					<h2 class="editContent"> 歪果仁 Career Partner </h2>
 				</div>
 			</div>
 		</div>
@@ -54,7 +54,7 @@
     							</div>
     							<div class="text_gym_style">
     								<p class="gym_st">
-    									<span class="editContent">Mandarin Training</span>
+    									<span class="editContent">Trainings</span>
     								</p>
     								<p class="gym_text">
     									<span class="editContent"> </span>
