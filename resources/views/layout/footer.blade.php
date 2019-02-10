@@ -17,17 +17,20 @@
 
                     <div class="nine columns omega ">
                         <div class="socbuttons">
-                           <div class="soc_icons pix_builder_bg">
+                           <!-- <div class="soc_icons pix_builder_bg">
                                 <ul class="bottom-icons">
                                     <li><a class="pi pixicon-facebook2 normal_gray" href="https://facebook.com/100tefl"></a></li>
                                     <li><a class="pi pixicon-twitter2 normal_gray" href="https://twitter.com/100tefl"></a></li>
                                     <li><a class="pi pixicon-instagram normal_gray" href="https://instagram.com/100tefl"></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="likes_st">
-                                <span class="editContent" style="">
+                                <!-- <span class="editContent" style="">
                                     <span class="pix_text">Your likes &amp; share makes us happy!</span>
-                                </span>
+                                </span> -->
+                                <a href="{{env('APP_URL')}}privacy" style="color: white">Privacy</a>
+                                <a href="{{env('APP_URL')}}cookies" style="color: white">Cookies</a>
+                                <a href="{{env('APP_URL')}}terms" style="color: white">Terms</a>
                             </div>
                         </div>
                     </div>

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/aboutus', function(){
 	return view('aboutuspage.aboutusBlock');
 });
+
+Route::get('/privacy', 'privacyController@privacy');
+Route::get('/cookies', 'privacyController@cookies');
+Route::get('/terms', 'privacyController@terms');
