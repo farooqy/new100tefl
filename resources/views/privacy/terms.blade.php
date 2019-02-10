@@ -6,7 +6,7 @@
 
 @section ("content")
 
-<div class="container" style="font-size:Times New Roman">
+<div class="container" style="font-family:Times New Roman">
 	<div class="row">
 		<div class="col-md-2 col-lg-2"></div>
 		<div class="col-md-8 col-lg-8">
