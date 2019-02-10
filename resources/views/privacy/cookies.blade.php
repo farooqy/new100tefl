@@ -1,10 +1,9 @@
-@extends("whitelayout.fullbody")
+@extends ("layout.mainlayout")
 
 @section ("pageTitle")
 	POLICES | 100TEFL
 @endsection
 
-@include("mainlayout.menulist")
 
 @section ("content")
 
