@@ -13,7 +13,7 @@
 
 	@php
 
-	$cookies = simplexml_load_file("uploads/static/xml/cookies.xml");
+	$cookies = simplexml_load_file("xml/cookies.xml");
 	@endphp
 
 	<h1>
