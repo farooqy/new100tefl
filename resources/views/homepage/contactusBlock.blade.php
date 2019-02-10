@@ -20,11 +20,11 @@
 									
 								</iframe> -->
                                 <div>
-                                    <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=31.94327890974764~118.79821607900713&lvl=19&typ=d&sty=h&src=SHELL&FORM=MBEDV8" scrolling="no">
+                                    <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=31.944612000000006~118.80564300000002&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
                                     </iframe>
                                     <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
-                                        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=31.94327890974764~118.79821607900713&amp;sty=h&amp;lvl=19&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                                        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=31.94327890974764~118.79821607900713&amp;sty=h&amp;lvl=19&amp;rtp=~pos.31.94327890974764_118.79821607900713____&amp;FORM=MBEDLD">Get Directions</a>
+                                        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=31.944612000000006~118.80564300000002&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                                        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=31.944612000000006~118.80564300000002&amp;sty=r&amp;lvl=16&amp;rtp=~pos.31.944612000000006_118.80564300000002____&amp;FORM=MBEDLD">Get Directions</a>
                                     </div>
                                 </div>
 							</div>
