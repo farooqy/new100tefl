@@ -28,9 +28,9 @@
                                 <!-- <span class="editContent" style="">
                                     <span class="pix_text">Your likes &amp; share makes us happy!</span>
                                 </span> -->
-                                <a href="{{env('APP_URL')}}privacy" style="color: white">Privacy</a>
-                                <a href="{{env('APP_URL')}}cookies" style="color: white">Cookies</a>
-                                <a href="{{env('APP_URL')}}terms" style="color: white">Terms</a>
+                                <a href="{{env('APP_URL')}}privacy" style="color: white; padding-right: 20px">Privacy</a>
+                                <a href="{{env('APP_URL')}}cookies" style="color: white; padding-right: 20px">Cookies</a>
+                                <a href="{{env('APP_URL')}}terms" style="color: white; padding-right: 20px">Terms</a>
                             </div>
                         </div>
                     </div>
