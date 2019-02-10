@@ -22,3 +22,6 @@ Route::get('/aboutus', function(){
 Route::get('/privacy', 'privacyController@privacy');
 Route::get('/cookies', 'privacyController@cookies');
 Route::get('/terms', 'privacyController@terms');
+
+Route::get('/services', 'serviceController@servicePage');
+Route::get('/careers', 'serviceController@careerPage');

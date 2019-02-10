@@ -43,7 +43,7 @@
     								</p>
     							</div>
     							<span class="link_3_btn editContent">
-    								<a class="slow_fade pix_text" href="#">Read More</a>
+    								<a class="slow_fade pix_text" href="{{env('APP_URL')}}careers">Read More</a>
     							</span>
     						</div>
     					</div>
@@ -61,7 +61,7 @@
     								</p>
     							</div>
     							<span class="link_3_btn editContent">
-    								<a class="slow_fade pix_text" href="#">Read More</a>
+    								<a class="slow_fade pix_text" href="{{env('APP_URL')}}careers">Read More</a>
     							</span>
     						</div>
     					</div>
@@ -79,7 +79,7 @@
     								</p>
     							</div>
     							<span class="link_3_btn editContent">
-                                    <a class="slow_fade pix_text" href="#">Read More</a>
+                                    <a class="slow_fade pix_text" href="{{env('APP_URL')}}careers">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                         			</p>
                         		</div>
                         		<span class="link_3_btn editContent">
-                                    <a class="slow_fade pix_text" href="#">Read More</a>
+                                    <a class="slow_fade pix_text" href="{{env('APP_URL')}}careers">Read More</a>
                                 </span>
                             </div>
                         </div>

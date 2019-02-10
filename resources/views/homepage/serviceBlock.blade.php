@@ -21,7 +21,7 @@
                       <p class="calc_homes_text editContent"> </p>
                     </div>
                     <span class="perday_btn editContent">  
-                      <a class="pix_text" href="#">More Details</a>
+                      <a class="pix_text" href="{{env('APP_URL')}}services">More Details</a>
                     </span>
                   </div>
                 </div>
@@ -34,7 +34,7 @@
                       <p class="calc_text editContent"> </p>
                     </div>
                     <span class="perday_btn editContent" style="">  
-                      <a class="pix_text" href="#">More Details</a>  
+                      <a class="pix_text" href="{{env('APP_URL')}}services">More Details</a>  
                     </span>
                   </div>
                 </div>
@@ -47,7 +47,7 @@
                       <p class="calc_text editContent"> </p>
                     </div>
                     <span class="perday_btn editContent">  
-                      <a class="pix_text" href="#">More Details</a>  
+                      <a class="pix_text" href="{{env('APP_URL')}}services">More Details</a>  
                     </span>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
                       <p class="calc_text editContent"> </p>
                     </div>
                     <span class="perday_btn editContent">  
-                      <a class="pix_text" href="#">More Details</a>  
+                      <a class="pix_text" href="{{env('APP_URL')}}services">More Details</a>  
                     </span>
                   </div>
                 </div>
