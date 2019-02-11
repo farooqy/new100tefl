@@ -32,6 +32,7 @@ class contactusController extends Controller
     		"email" => ["required",'email', 'min:8', 'max:200'],
     		"messageConcern" => "required|in:1,2,3,4,,5,6",
     		"message" => ["required", 'min:10', 'max:200'],
+
     	]);
 
     	$feedbackModel = new feedbackModel;
@@ -40,13 +41,13 @@ class contactusController extends Controller
     	$feedbackModel->email = $request->email;
     	$feedbackModel->concernTopic = $request->messageConcern;
     	$feedbackModel->feedbackMessage = $request->message;
-
+    	$feedbackModel->isRepliedTo = 'false';
     	$request->messageConcern = $this->allowedOptions[$request->messageConcern];
     	if($feedbackModel->save())
     		session()->flash('successFeedBack', 'Thank you for contacting us.'.
     			' We will reply to you as soon as possible');
     	\Mail::to(env('FEEDBACK_ADMIN_EMAIL'))->send(new NotifyFeedbackMailer($request));
     	\Mail::to($request->email)->send(new FeedBackSentMailer($request->firstname.' '.$request->lastname));
-    	return redirect(env('APP_URL').'/#contactus');
+    	return redirect(env('APP_URL').'/#contactBlock');
     }
 }
