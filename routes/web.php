@@ -25,3 +25,6 @@ Route::get('/terms', 'privacyController@terms');
 
 Route::get('/services', 'serviceController@servicePage');
 Route::get('/careers', 'serviceController@careerPage');
+
+
+Route::post('contactus', 'contactusController@storeFeedback');

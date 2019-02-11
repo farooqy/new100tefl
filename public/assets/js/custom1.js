@@ -1,7 +1,14 @@
 // jQuery Initialization
 jQuery(document).ready(function($){
 "use strict"; 
+        //custom by Noor
 
+        if($('.is-danger').hasClass('danger-form'))
+        {
+            window.location.href = '#contactBlock';
+        }
+
+        //end of custom by Noor
         //======================================================================================================
         //      Fancy Box
         //======================================================================================================
@@ -117,85 +124,85 @@ jQuery(document).ready(function($){
 
             
         });
-        $("form:not(.pix_paypal)").live( "submit", function( event ) {
-            event.preventDefault();
-            var values = {};
-            var temp_str = "";
-            var theform = this;
-            var proceed = true;
-            var is_confirm = false;
-            var confirm_pop = "";
-            var is_redirect = false;
-            var redirect_link = "";
-            var have_type = false;
-            var the_type = "";
-            if($(theform).attr('pix-confirm')){
-                confirm_pop = $(theform).attr('pix-confirm');
-                is_confirm = true;
-            }
-            if($(theform).attr('pix-redirect')){
-                redirect_link = $(theform).attr('pix-redirect');
-                is_redirect = true;
-            }
-            if($(theform).attr('pix-form-type')){
-                if(($(theform).attr('pix-form-type')!='') && ($(theform).attr('pix-form-type')!='#' )){
-                    the_type = $(theform).attr('pix-form-type');
-                    have_type = true;    
-                }
-            }
+        // $("form:not(.pix_paypal)").live( "submit", function( event ) {
+        //     event.preventDefault();
+        //     var values = {};
+        //     var temp_str = "";
+        //     var theform = this;
+        //     var proceed = true;
+        //     var is_confirm = false;
+        //     var confirm_pop = "";
+        //     var is_redirect = false;
+        //     var redirect_link = "";
+        //     var have_type = false;
+        //     var the_type = "";
+        //     if($(theform).attr('pix-confirm')){
+        //         confirm_pop = $(theform).attr('pix-confirm');
+        //         is_confirm = true;
+        //     }
+        //     if($(theform).attr('pix-redirect')){
+        //         redirect_link = $(theform).attr('pix-redirect');
+        //         is_redirect = true;
+        //     }
+        //     if($(theform).attr('pix-form-type')){
+        //         if(($(theform).attr('pix-form-type')!='') && ($(theform).attr('pix-form-type')!='#' )){
+        //             the_type = $(theform).attr('pix-form-type');
+        //             have_type = true;    
+        //         }
+        //     }
             
-            $("input, textarea, select").css('border-color',''); 
-            $.each($(theform).serializeArray(), function(i, field) {
-                values[field.name] = field.value;
-                temp_str += field.name + ": " + field.value + "\n";
-                var is_required =$(theform).find('[name='+field.name+']').attr('required');
-                //alert("THE FORM IS: "+sada);
-                if(field.value=="" && is_required){
-                    $(theform).find('input[name='+field.name+']').css('border-color','red');     
-                    $(theform).find('textarea[name='+field.name+']').css('border-color','red');     
-                    $(theform).find('select[name='+field.name+']').css('border-color','red'); 
-                    proceed = false;
-                }
-                 //alert(this.name);
-            });
-            // if(is_confirm){
-            //     $.fancybox($("#" + confirm_pop));
-            // }
-            //alert(temp_str);
-            if(proceed) 
-            {   
-                if(have_type){
-                    values['pixfort_form_type'] = the_type;
-                    //alert(the_type);
-                }
-                //data to be sent to server
-                var post_data;
-                var output;
-                //Ajax post data to server
-                $.post('pix_mail/new_contact.php', values, function(response){  
-                    //load json data from server and output message     
-                    if(response.type == 'error')
-                    {
-                        output = '<div class="error">'+response.text+'</div>';
-                    }else{
-                        if(is_confirm){
-                            $.fancybox($("#" + confirm_pop));
-                        }
-                        if(is_redirect){
-                            window.location.href = redirect_link;
-                        }
-                        output = '<div class="success">'+response.text+'</div>';
-                        //reset values in all input fields
-                        $(theform).find('input').val(''); 
-                        $(theform).find('input').css('border-color',''); 
-                        $(theform).find('textarea').val(''); 
-                    }
-                    $(theform).find('#result').hide().html(output).slideDown();
-                }, 'json');
+        //     $("input, textarea, select").css('border-color',''); 
+        //     $.each($(theform).serializeArray(), function(i, field) {
+        //         values[field.name] = field.value;
+        //         temp_str += field.name + ": " + field.value + "\n";
+        //         var is_required =$(theform).find('[name='+field.name+']').attr('required');
+        //         //alert("THE FORM IS: "+sada);
+        //         if(field.value=="" && is_required){
+        //             $(theform).find('input[name='+field.name+']').css('border-color','red');     
+        //             $(theform).find('textarea[name='+field.name+']').css('border-color','red');     
+        //             $(theform).find('select[name='+field.name+']').css('border-color','red'); 
+        //             proceed = false;
+        //         }
+        //          //alert(this.name);
+        //     });
+        //     // if(is_confirm){
+        //     //     $.fancybox($("#" + confirm_pop));
+        //     // }
+        //     //alert(temp_str);
+        //     if(proceed) 
+        //     {   
+        //         if(have_type){
+        //             values['pixfort_form_type'] = the_type;
+        //             //alert(the_type);
+        //         }
+        //         //data to be sent to server
+        //         var post_data;
+        //         var output;
+        //         //Ajax post data to server
+        //         $.post('pix_mail/new_contact.php', values, function(response){  
+        //             //load json data from server and output message     
+        //             if(response.type == 'error')
+        //             {
+        //                 output = '<div class="error">'+response.text+'</div>';
+        //             }else{
+        //                 if(is_confirm){
+        //                     $.fancybox($("#" + confirm_pop));
+        //                 }
+        //                 if(is_redirect){
+        //                     window.location.href = redirect_link;
+        //                 }
+        //                 output = '<div class="success">'+response.text+'</div>';
+        //                 //reset values in all input fields
+        //                 $(theform).find('input').val(''); 
+        //                 $(theform).find('input').css('border-color',''); 
+        //                 $(theform).find('textarea').val(''); 
+        //             }
+        //             $(theform).find('#result').hide().html(output).slideDown();
+        //         }, 'json');
                 
-            }
-            //alert( $( this ).serialize() );
-        });
+        //     }
+        //     //alert( $( this ).serialize() );
+        // });
         $("input, textarea, select").keyup(function() { 
             $(this).css('border-color',''); 
             $('#result').slideUp();

@@ -43,25 +43,38 @@
 								Our service is totaly thin and light.
 							</p>
 							<div class="contact_st">
-								<form id="contact_form" pix-confirm="hidden_pix_2" style="background-color: rgba(0, 0, 0, 0); padding-top: 10px; padding-bottom: 10px;" pix-redirect="">
+								<form id="contact_form"  style="background-color: rgba(0, 0, 0, 0); padding-top: 10px; padding-bottom: 10px;" method="POST" action="contactus">
+                                    @csrf
+                                    @if($errors->count() > 0)
+    
+                                    @foreach($errors->all() as $error)
+                                    
+                                        <div class="row error is-danger danger-form">
+                                            {{$error}}
 
-									<input type="text" name="firstName" id="name" placeholder="Your First Name" class="pix_text" style="border: thin solid gray; font-size: 14px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif;" required="">
-									<input type="text" name="lastName" id="company" placeholder="Your last name" class="pix_text" style="color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif;" required="">
-									<input type="email" name="email" id="email" placeholder="Enter Your Email" class="pix_text" style="color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif;" required="">
-									<textarea rows="5" name="message" class="text_area pix_text" placeholder="Write your Message Here" style="color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;" required=""></textarea>
+                                        </div>
+                                    @endforeach
+                                    @endif
+                                    @if($flash = session('successFeedBack'))
+                                    <div class="row is-success">
+                                        {{$flash}}
+                                    </div>
+                                    @endif
+									<input type="text" name="firstname" id="name" placeholder="Your First Name" class="pix_text" style="border: thin solid gray; font-size: 14px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif;" required="" value="{{old('firstname')}}">
+									<input type="text" name="lastname" id="company" placeholder="Your last name" class="pix_text" style="color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif;" required="" value="{{old('lastname')}}">
+									<input type="email" name="email" id="email" placeholder="Enter Your Email" class="pix_text" style="color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif;" required="" value="{{old('email')}}">
+									<textarea rows="5" name="message" class="text_area pix_text" placeholder="Write your Message Here" style="color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;" required="">{{old('message')}}</textarea>
 									<div id="result"></div>
-									<select id="NewSelect" name="example" class="pix_text" style="margin-top:20px">
-									    <option value="">What does your message concern?</option>
-									    <option value="A"> Recruit  招聘 </option>
-									    <option value="B"> Job     求职  </option>
-									    <option value="">Visa    签证</option>
-									    <option value="">Training  培训</option>
-									    <option value="">Incubator 创业</option>
-									    <option value="">Others  其他</option>
+									<select id="NewSelect" name="messageConcern" class="pix_text" style="margin-top:20px">
+									    <option value="0">What does your message concern?</option>
+									    <option value="1"> Recruit  招聘 </option>
+									    <option value="2"> Job     求职  </option>
+									    <option value="3">Visa    签证</option>
+									    <option value="4">Training  培训</option>
+									    <option value="5">Incubator 创业</option>
+									    <option value="6">Others  其他</option>
 									</select>
-									<button type="submit" class="subscribe_btn submit_btn_landing pix_text" id="subscribe_btn_2" style="color: rgb(255, 255, 255); font-size: 14px; background-color: rgb(68, 138, 239); font-family: &quot;Open Sans&quot;, sans-serif;" name="message" placeholder="Write your Message Here">
-										<span class="editContent" style="">Send it right away</span>
-									</button>
+                                    <input type="submit" name="submit" class="" value="Send Message">
 								</form>
 							</div>
 						</div>
