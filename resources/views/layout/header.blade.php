@@ -9,7 +9,7 @@
                                     <span class="sr-only">Toggle navigation</span>
                                 </button>
                                 <a href="{{env('APP_URL')}}">
-                                    <img src="images/uploads/100teflTransparent-small.png" class="pix_nav_logo animate-in slow-mo" alt="" style="border-radius: 0px; border-style: none; border-width: 1px; width: 134px; height: 60px; border-color: rgb(255, 255, 255);" data-anim-type="fade-in-up-large" data-anim-delay=""> 
+                                    <img src="{{env('APP_URL')}}images/uploads/100teflTransparent-small.png" class="pix_nav_logo animate-in slow-mo" alt="" style="border-radius: 0px; border-style: none; border-width: 1px; width: 134px; height: 60px; border-color: rgb(255, 255, 255);" data-anim-type="fade-in-up-large" data-anim-delay=""> 
                                 </a>
                                                
                             </div>

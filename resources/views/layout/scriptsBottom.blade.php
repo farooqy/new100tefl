@@ -14,3 +14,6 @@
 
 <script src="{{env('APP_URL')}}assets/js/appear.min.js" type="text/javascript"></script>
 <script src="{{env('APP_URL')}}assets/js/animations.js" type="text/javascript"></script>
+
+
+<script src="{{env('APP_URL')}}js/main.js" type="text/javascript"></script>
