@@ -25,14 +25,14 @@
 				<div class="sixteen columns">
 					<div class="five columns  alpha">
 						<div class="column">
-							<img src="images/uploads/newyear/news011.PNG" style="border-radius: 0px; border-color: rgb(68, 68, 68); border-style: none; border-width: 1px; width: 260px; height: 150px; margin-top: 30px;" class="animate-in slow-mo" data-anim-type="zoom-in-up-left" data-anim-delay="" width="100%" height="150px">
+							<video src="images/uploads/1550112312835.mp4" type="video/mp4" controls="" style="border-radius: 0px; border-color: rgb(68, 68, 68); border-style: none; border-width: 1px; width: 260px; height: 150px; margin-top: 30px;" class="animate-in slow-mo" data-anim-type="zoom-in-up-left" data-anim-delay="" width="100%" height="150px">Your Browser Does support this video</video>
 							<div>
-								<h4 style="padding-bottom: 20px; text-decoration: underline; font-size: 18px;">What we planned for the next Year
+								<h4 style="padding-bottom: 20px; text-decoration: underline; font-size: 18px;">Life In China
 								</h4>
 						    </div>
 						</div>
 						<div class="column">
-						    <img src="images/uploads/newyear/news013.PNG" style="border-radius: 0px; border-color: rgb(68, 68, 68); border-style: none; border-width: 1px; width: 260px; height: 150px;" class="animate-in slow-mo" data-anim-type="zoom-in-left" data-anim-delay="" width="100%" height="150px">
+						    <img src="images/uploads/mmexport1550112495713.jpg" style="border-radius: 0px; border-color: rgb(68, 68, 68); border-style: none; border-width: 1px; width: 260px; height: 150px;" class="animate-in slow-mo" data-anim-type="zoom-in-left" data-anim-delay="" width="100%" height="150px">
 						    <div>
 						        <h4 style="padding-bottom: 20px; text-decoration: underline; font-size: 18px;">Our dedication to achieving more</h4>
 						    </div>
