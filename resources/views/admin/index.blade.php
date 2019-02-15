@@ -14,10 +14,14 @@
 <div class="container">
 	<div class="row">
 		<h2>Administrtive tool </h2>
+		{{session('logStatus')}}
 	</div>
 
 	<div class="row">
 		<a href="admins/feedback">Client Feedbacks</a>
+	</div>
+	<div class="row">
+		<a href="news/addnews">Add news</a>
 	</div>
 </div>
 

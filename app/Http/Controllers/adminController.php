@@ -18,6 +18,7 @@ class adminController extends Controller
     }
     public function clientFeedback()
     {
+        $this->isAlreadyLoggedIn();
     	$feedbacks = feedbackModel::all();
     	return view('admin.feedback', compact('feedbacks'));
     }
@@ -32,19 +33,23 @@ class adminController extends Controller
 
     public function getRoles()
     {
+        $this->isAlreadyLoggedIn();
         return 'will give you the roles';
     }
 
     public function createRole()
     {
+        $this->isAlreadyLoggedIn();
         return view('admin.create_role');
     }
     public function editRole($role_id)
     {
+        $this->isAlreadyLoggedIn();
         return "will edit roles $role_id";
     }
     public function storeRole(Request $newRole)
     {
+        $this->isAlreadyLoggedIn();
         $newRole->validate([
             'role_name' => 'required|max:20'
         ]);
@@ -137,8 +142,16 @@ class adminController extends Controller
     }
     protected function isAlreadyLoggedIn()
     {
-        if(!Auth::check())
-            return Redirect::route('login');
+        if($user = Auth::user())
+        {
+            //
+            return true;
+            //return Redirect::route('login');
+        }
+        else
+        {
+            return redirect()->route('login')->send();
+        }    
     }
 
 }

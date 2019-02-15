@@ -5,11 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\models\newsModel;
 use App\models\newsFilesModel;
+use Auth;
+use Redirect;
 class newsController extends Controller
 {
     //
     public function index()
     {
+    	$this->isAlreadyLoggedIn();
     	return view('newspage.index');
     }
     public function addFile(Request $formRequest)
@@ -51,6 +54,7 @@ class newsController extends Controller
     }
     public function newNews(Request $request)
     {
+    	$this->isAlreadyLoggedIn();
         $failed = false;
         $fileTypes = [
             "image" => ["jpg","jpeg","png"],
@@ -147,5 +151,19 @@ class newsController extends Controller
     public function newYearParty()
     {
     	return view('newspage.newyear');
+    }
+
+    protected function isAlreadyLoggedIn()
+    {
+        if($user = Auth::user())
+        {
+            //
+            return true;
+            //return Redirect::route('login');
+        }
+        else
+        {
+            return redirect()->route('login')->send();
+        }    
     }
 }
