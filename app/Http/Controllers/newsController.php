@@ -93,7 +93,12 @@ class newsController extends Controller
             $numfiles = -1;
         $fextension = $request->file('newsFeatureImage')->getClientOriginalExtension();
     	$filename = time().'_newsFeature_.'.$fextension;
-        $featureImageUrl = env('APP_URL').'uploads/news/'.$filename;
+    	if(env('APP_ENV') === 'production')
+        {
+        	$featureImageUrl = env('APP_URL').'new100tefl/public/uploads/news/'.$filename;
+        }
+        else
+	        $featureImageUrl = env('APP_URL').'uploads/news/'.$filename;
         $newsFileNames = [];
     	if(!$request->file('newsFeatureImage')->move(
         base_path() . '/public/uploads/news/', $filename))
@@ -134,9 +139,15 @@ class newsController extends Controller
                         $ftype = "video";
                     else
                         $ftype = "unknown";
+                    if(env('APP_ENV') === 'production')
+			        {
+			        	$fileUrl = env('APP_URL').'new100tefl/public/uploads/news/'.$filename;
+			        }
+			        else
+			        	$fileUrl = env('APP_URL').'/uploads/news/'.$filename;
                     $newsFileNames[$index] = [
                         "news_id" => ($newsId+1),
-                        'file_url'=>env('APP_URL').'uploads/news/'.$filename,
+                        'file_url'=>$fileUrl,
                         "file_type" => $ftype,
                         'file_status' => 'active',
                         'created_at' => date('Y-m-d H:i:s'),
