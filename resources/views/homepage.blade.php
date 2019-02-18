@@ -1,5 +1,9 @@
 @extends ("layout.mainlayout")
 
+@section("pageTitle")
+	100TEFL 
+@endsection
+
 @section ("content")
 
     @include ("homepage.topMostBody")
