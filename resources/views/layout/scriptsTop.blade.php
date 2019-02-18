@@ -37,7 +37,5 @@
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="{{env('APP_URL')}}images/favicon.ico">
-    <link rel="apple-touch-icon" href="{{env('APP_URL')}}images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{env('APP_URL')}}images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{env('APP_URL')}}images/apple-touch-icon-114x114.png">
+    <link rel="icon" type="image/icon" sizes="32x32" href="{{env('APP_URL')}}images/favicon.ico">
     <link rel="stylesheet" href="{{env('APP_URL')}}css/custom/index.css?v={{time()}}">
