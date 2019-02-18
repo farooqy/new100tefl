@@ -12,6 +12,6 @@ class newsModel extends Model
 
     public function newsFiles()
     {
-    	return $this->hasMany('App\Models\newsFilesModel', 'news_id');
+    	return $this->hasMany('App\models\newsFilesModel', 'news_id');
     }
 }
