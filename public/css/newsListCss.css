@@ -1,0 +1,55 @@
+.navbarDiv {
+	background: none;
+	height: 100px;
+}
+.newsListDiv {
+	border:thin solid gray;
+	padding-top:20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	min-height: 400px;
+}
+.newsListDiv .newsListContainer {
+	display: inline-block;
+	text-align: center;
+}
+.newsListTitle {
+	font-weight: bolder;
+}
+.newsListImage img, .newsListImage video{
+	border-radius: 20px;
+}
+.givenNewsContainer .givenTitle {
+	font-weight: bolder;
+	margin-left: 10px;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.givenNewsContainer .givenFeatureImage img, .givenNewsContainer .givenFeatureImage video{
+	margin-left: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.givenNewsContainer .givenContent {
+	padding-left: 10px;
+	text-align: justify;
+	padding-right: 50px;
+}
+.newsOtherFiles .otherImages{
+	display:-webkit-inline-flex;
+	height: 200px;
+	width: 250px;
+	margin-top:20px;
+}
+.otherImages img, .otherImages video {
+	border:thin solid gray;
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+}
+.ql-editor {
+	background-color: white;
+}
+@media only screen and	(max-width:768px){
+}
