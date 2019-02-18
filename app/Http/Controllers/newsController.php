@@ -42,7 +42,7 @@ class newsController extends Controller
         	$fileUrl = env('APP_URL').'new100tefl/public/uploads/news/tmps/'.$filename;
         }
         else
-        	env('APP_URL').'uploads/news/tmps/'.$filename
+        	$fileUrl = env('APP_URL').'uploads/news/tmps/'.$filename;
         $json = json_encode(array("success" => true, "fileurl" => $fileUrl));
         return $json;
     }
