@@ -105,7 +105,7 @@
 			<div class="two-thirds column pix_area1">
 				<div class="call_text">
 					<h2 class="editContent"><strong>For More Information</strong></h2>
-					<p class="normal_text light_gray editContent">Send us an email to <a href="mailto:services@100tefl.com">servces@100tefl.com </a>or click the button on the right 
+					<p class="normal_text light_gray editContent">Send us an email to <a href="mailto:service@100tefl.com">service@100tefl.com </a>or click the button on the right 
 					to send us feedback.</p>
 				</div>
 			</div>

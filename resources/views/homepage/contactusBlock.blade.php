@@ -155,8 +155,8 @@
                             <span class="editContent">
                             	<span class="c2_style2">
                             		<span class="pix_text">
-                            			<a href="mailto:services@100tefl.com">
-                            				services@100tefl.com
+                            			<a href="mailto:service@100tefl.com">
+                            				service@100tefl.com
                             			</a>
                             		</span>
                             	</span>
