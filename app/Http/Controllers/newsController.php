@@ -37,8 +37,13 @@ class newsController extends Controller
         if(!$formRequest->file('addFile')->move(
         base_path() . '/public/uploads/news/tmps/', $filename))
             $json =json_encode(array("success" => false, 'fileurl' => null));
-
-        $json = json_encode(array("success" => true, "fileurl" => env('APP_URL').'uploads/news/tmps/'.$filename));
+        if(env('APP_ENV') === 'production')
+        {
+        	$fileUrl = env('APP_URL').'new100tefl/public/uploads/news/tmps/'.$filename;
+        }
+        else
+        	env('APP_URL').'uploads/news/tmps/'.$filename
+        $json = json_encode(array("success" => true, "fileurl" => $fileUrl));
         return $json;
     }
     public function showAllNews()
