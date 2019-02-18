@@ -62,7 +62,7 @@ News  | 100TEFL
 			</div>
 			<div class="row">
 				<label for="newsTitle" class="label">Write the content</label>
-				<textarea type="text" name="newsContent" placeholder="Write the content" id="editor">{{old('newsContent')}}</textarea>
+				<textarea type="text" name="newsContent" placeholder="Write the content" id="editor" rows="30">{{old('newsContent')}}</textarea>
 				{{-- <input type="hidden" value="{{old('newsContent')}}" name="newsContent" class="hiddenNewsContent"> --}}
 			</div>
 			{{-- <textarea id="editor" placeholder="Your news content" name="newsContent" rows="20"></textarea>  --}}

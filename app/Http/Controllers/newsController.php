@@ -20,6 +20,10 @@ class newsController extends Controller
         $rules = [
         'addFile' => "required|max:20000|mimes:jpg,jpeg,png,avi,web,mp4,doc,docx,pdf"
         ];
+        $types = [
+        	"video" => ["web", "mp4", "avi"],
+        	"images" => ["jpg", "jpeg", "png"]
+        ];
 
         $customMessages = [
             'required' => 'The :attribute field is required.',
@@ -27,12 +31,14 @@ class newsController extends Controller
             'mimes' => 'The type of the file is not valid. Please upload an image or video'
         ];
 
+
         $this->validate($formRequest, $rules, $customMessages);
         // $formRequest->validate([
         //     'addFile' => "required|max:20000|mimes:jpg,jpeg,png,avi,web,mp4"
         // ]);
 
         $fextension = $formRequest->file('addFile')->getClientOriginalExtension();
+
         $filename = time().'_addFile_.'.$fextension;
         if(!$formRequest->file('addFile')->move(
         base_path() . '/public/uploads/news/tmps/', $filename))
@@ -43,6 +49,8 @@ class newsController extends Controller
         }
         else
         	$fileUrl = env('APP_URL').'uploads/news/tmps/'.$filename;
+        if(in_array($fextension, $types["video"]))
+        	$fileUrl = "<p><video src=\"$fileUrl\" controls=\"\" width=\"550px\" height=\"400px\"> </video></p>";
         $json = json_encode(array("success" => true, "fileurl" => $fileUrl));
         return $json;
     }

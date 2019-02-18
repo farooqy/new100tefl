@@ -7,6 +7,7 @@
 
 
 @section ("content")
+<div class="container">
 	<link rel="stylesheet" type="text/css" href="{{env('APP_URL')}}css/newsListCss.css">
 	<div class="row" style="min-height: 500px">
 		<div class="col-md-2 col-lg-2"></div> 
@@ -101,5 +102,4 @@
 		<div class="col-md-2 col-lg-2"></div> 
 		
 	</div>
-
 @endsection

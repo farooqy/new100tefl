@@ -18,7 +18,8 @@ $(document).ready(function(){
 	});
     $('.givenContent').html($('.givenContent').text());
 	$('#editor').each(function () {
-    var editor = new Jodit(this);
+    var editor = new Jodit(this, {
+    });
 	});
 
 	$('.search-icon').click(function(){
