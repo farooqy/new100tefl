@@ -49,7 +49,7 @@
 					<div class="givenTitle">
 						{{$news->title}}
 					</div>
-					<div class="givenFeatureImage">
+					{{-- <div class="givenFeatureImage">
 							@if($news->feature_image_type === "video")
 							<video  height="300px" width="400" controls="">
 								<source src="{{$news->feature_image}}" type="video/mp4" >
@@ -59,7 +59,7 @@
 							@endif
 						
 						
-					</div>
+					</div> --}}
 					<div class="givenContent">
 						{{$news->content}}
 					</div>
