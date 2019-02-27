@@ -56,7 +56,8 @@ $(document).ready(function(){
 		// alert('form submitted');
 		var formdata = new FormData(this);
 		// formdata.append('addFileFile', 'something')
-		var url  = 'addFile';
+		// var url  = ($('.fileTargetUrl').val() == undefined ? 'addFile': $('.fileTargetUrl').val());
+		var url = $(this).attr('action');
 		// console.log(JSON.stringify(formdata));
 		ajax_call(url, formdata, 'fileForUrl');
 	});

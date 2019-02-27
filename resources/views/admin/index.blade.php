@@ -2,7 +2,7 @@
 
 
 @section ("pageTitle")
-	About Us | 100TEFL
+	Administrative | 100TEFL
 @endsection
 @section ("content")
 <style type="text/css">
@@ -22,15 +22,41 @@
 				<img src="{{env('APP_URL')}}images/uploads/icons/newsicon.jpg" height="200px" width="100%" style="border:thin solid gray; border-radius: 4px">
 			</div>
 			<div class="row">
-				<a href="news/addnews" style="font-size: 18px">Add news</a>
+				<a href="" style="font-size: 18px"></a>
 			</div>
+
+			<div class="row">
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Choose Action
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="news/addnews">Add news</a>
+				    <a class="dropdown-item" href="news/viewnews">View News</a>
+				  </div>
+				</div>
+			</div>
+
+				
+
+
 		</div>
 		<div class="col-md-3 col-lg-3">
 			<div class="row">
 				<img src="{{env('APP_URL')}}images/uploads/icons/feedback.jpg" height="200px" width="100%" style="border:thin solid gray; border-radius: 4px">
 			</div>
 			<div class="row">
-				<a href="admins/feedback" style="font-size: 18px">Client Feedbacks</a>
+				<a href="" style="font-size: 18px"></a>
+			</div>
+			<div class="row">
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Choose Action
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="admins/feedback">Client Feedbacks</a>
+				  </div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-3 col-lg-3">
@@ -38,7 +64,14 @@
 				<img src="{{env('APP_URL')}}images/uploads/icons/membersicon.png" height="200px" width="100%"  style="border:thin solid gray; border-radius: 4px">
 			</div>
 			<div class="row">
-				<a href="admins/feedback" style="font-size: 18px">Member Details</a>
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Choose Action
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="admins/memberDetails">Member Details</a>
+				  </div>
+				</div>
 			</div>
 		</div>
 	</div>

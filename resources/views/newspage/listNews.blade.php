@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="{{env('APP_URL')}}css/newsListCss.css">
 	<div class="row" style="min-height: 500px">
 		<div class="col-md-2 col-lg-2"></div> 
-		<div class="col-md-8 col-lg-8 newsListDiv">
+		<div class="col-md-8 col-lg-8 newsListDiv" style="margin-top: 10px;">
 		@if(isset($newsList))
 			@foreach($newsList as $news)
 				<div class="newsListContainer">

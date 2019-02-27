@@ -58,8 +58,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/news', 'comingsoon@news');
 Route::get('/news/addnews', 'newsController@index');
-Route::post('news/save', 'newsController@newNews');
-Route::put('news/save', 'newsController@newNews');
+Route::get('/news/editnews/{newsId}', 'newsController@editnews');
+Route::get('/news/viewnews', 'newsController@viewnews');
+Route::post('/news/save', 'newsController@newNews');
+Route::post('/news/saveEdit', 'newsController@saveEdit');
+Route::get('/news/deletenew/{newsId}', 'newsController@deleteNews');
+Route::put('/news/save', 'newsController@newNews');
 Route::get('/news/newyearparty', 'newsController@newYearParty');
 Route::get('/news',  'newsController@showAllNews');
 Route::get('/news/{id}',  'newsController@getGivenNews');

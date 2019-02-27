@@ -45,6 +45,11 @@
  					    </div>
 					</div>
 				</div>
+				<div class="sixteen columns" style="text-align: center;">
+					<a href="{{env('APP_URL')}}news" style="font-size: 20px; text-align: center;">
+						Read Latest News
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
