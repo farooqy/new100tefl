@@ -16,12 +16,6 @@ class adminController extends Controller
         $this->isAlreadyLoggedIn();
     	return view("admin.index");
     }
-    public function clientFeedback()
-    {
-        $this->isAlreadyLoggedIn();
-    	$feedbacks = feedbackModel::all();
-    	return view('admin.feedback', compact('feedbacks'));
-    }
     public function registerPage()
     {
         return view('admin.register');

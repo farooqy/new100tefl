@@ -41,12 +41,16 @@ Route::get('/admins/login', 'adminController@loginPage');
 Route::post('/admins/login', 'adminController@doLogin');
 Route::get('/admins/100teflNew', 'adminController@registerPage');
 Route::post('/admins/100teflNew', 'adminController@doRegister');
-Route::get('/admins/feedback', 'adminController@clientFeedback');
+Route::get('/admins/feedback', 'contactusController@clientFeedback');
 Route::get('/admins/roles', 'adminController@getRoles');
 Route::get('/admins/roles/create', 'adminController@createRole');
 Route::post('/admins/roles/create', 'adminController@storeRole');
 Route::put('/admins/roles/create', 'adminController@storeRole');
 Route::get('/admins/roles/edit/{role_id}', 'adminController@editRole');
+
+Route::get('/admins/feedback/markereplied/{feeedbackId}', 'contactusController@markAsReplied');
+Route::get('/admins/feedback/viewreply/{feeedbackId}', 'contactusController@viewReply');
+Route::post('/admins/feedback/viewreply/{feeedbackId}', 'contactusController@doReply');
 
 //************ AUTHENTICATION CONTROLLER ***********//
 Auth::routes();
